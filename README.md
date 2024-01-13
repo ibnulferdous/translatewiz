@@ -1,4 +1,6 @@
-# Shopify App Template - Remix
+# Translatewiz
+
+This is an example app built with the official remix template. Here I used Google Translator to translate the webpage into different languages. To deploy and test this app, please go through the following steps.
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
 
@@ -13,6 +15,14 @@ Visit the [`shopify.dev` documentation](https://shopify.dev/docs/api/shopify-app
 1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
 2. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
 3. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
+
+### Git Clone
+
+Go to the directory where you want to download the repository and execute the following git command in any terminal.
+
+```shell
+git clone https://github.com/ibnulferdous/translatewiz.git
+```
 
 ### Setup
 
@@ -202,6 +212,7 @@ pnpm run shopify app config push
 
 This template registers webhooks after OAuth completes, usng the `afterAuth` hook when calling `shopifyApp`.
 The package calls that hook in 2 scenarios:
+
 - After installing the app
 - When an access token expires
 
@@ -214,7 +225,7 @@ That will force the OAuth process and call the `afterAuth` hook.
 
 Webhooks subscriptions created in the [Shopify admin](https://help.shopify.com/en/manual/orders/notifications/webhooks) will fail HMAC validation. This is because the webhook payload is not signed with your app's secret key.
 
-Create [webhook subscriptions]((https://shopify.dev/docs/api/shopify-app-remix/v1/guide-webhooks)) using the `shopifyApp` object instead.
+Create [webhook subscriptions](<(https://shopify.dev/docs/api/shopify-app-remix/v1/guide-webhooks)>) using the `shopifyApp` object instead.
 
 Test your webhooks with the [Shopify CLI](https://shopify.dev/docs/apps/tools/cli/commands#webhook-trigger) or by triggering events manually in the Shopify admin(e.g. Updating the product title to trigger a `PRODUCTS_UPDATE`).
 
