@@ -2,7 +2,7 @@
 
 name = "Translatewiz"
 client_id = "23de71ec6c87b27047a217730584b0d6"
-application_url = "https://mw-accurately-clinic-productions.trycloudflare.com"
+application_url = "https://confirmation-exempt-ron-banners.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://mw-accurately-clinic-productions.trycloudflare.com/auth/callback",
-  "https://mw-accurately-clinic-productions.trycloudflare.com/auth/shopify/callback",
-  "https://mw-accurately-clinic-productions.trycloudflare.com/api/auth/callback"
+  "https://confirmation-exempt-ron-banners.trycloudflare.com/auth/callback",
+  "https://confirmation-exempt-ron-banners.trycloudflare.com/auth/shopify/callback",
+  "https://confirmation-exempt-ron-banners.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
